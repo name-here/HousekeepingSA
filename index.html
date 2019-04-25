@@ -18,11 +18,9 @@
                     margin: 7px 10px;
                 }
             }
-            .bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
-                content: none;
-            }
-            .bc-icons-2 .breadcrumb-item.active {
-                color: #455a64;
+            .breadcrumb-item+.breadcrumb-item::before {
+                content: "►";
+                color: #a0a0a0;
             }
         </style>
     </head>
@@ -31,9 +29,11 @@
             <div class="navbar-brand">SA Housekeeping</div>
             <div class="bc-icons-2">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active">Select a Building</li> <li class="breadcrumb-item inactive">►</li>
-                        <li class="breadcrumb-item"><a href="#">Select a Floor</a></li>
+                    <ol class="breadcrumb breadcrumb-arrow">
+                        <li class="breadcrumb-item active">Select a Building</li>
+                        <li class="breadcrumb-item">Select a Floor</li>
+                        <li class="breadcrumb-item">Select a Room</li>
+                        <li class="breadcrumb-item">Submit Description</li>
                     </ol>
                 </nav>
             </div>
